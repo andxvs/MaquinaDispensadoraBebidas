@@ -1,0 +1,2437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuPrincipal</class>
+ <widget class="QMainWindow" name="MenuPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1360</width>
+    <height>902</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MenuPrincipal</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="AdministratorIngreso">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>420</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Finalizar </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>100</y>
+          <width>321</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingrese la informacion del producto al ingresar</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>170</y>
+          <width>178</width>
+          <height>184</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;MS Serif&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Cantidad de Producto</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;MS Serif&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Columna</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;MS Serif&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Nombre de Producto</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;MS Serif&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Fila</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>Posicion Seleccionada:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>162</y>
+          <width>139</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="1" column="0">
+          <widget class="QSpinBox" name="PCantidad">
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="PName">
+           <property name="tabletTracking">
+            <bool>true</bool>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhUppercaseOnly</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="PFila">
+           <property name="inputMethodHints">
+            <set>Qt::ImhEmailCharactersOnly|Qt::ImhUppercaseOnly</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QSpinBox" name="PColumna">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="SeleccionarCantidad">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>200</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Seleccionar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SeleccionarPosicion">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>260</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Seleccionar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SlotName">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>410</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SlotCantidad">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>450</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Verificacion">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>490</y>
+          <width>141</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar Producto </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SlotPosition">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>310</y>
+          <width>137</width>
+          <height>85</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SlotID">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>500</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>400</y>
+          <width>113</width>
+          <height>133</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>Nombre Producto</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>Cantidad Ingresada</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>Slot ID</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="MenuProductos">
+       <widget class="QLabel" name="tituloMenu">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>0</y>
+          <width>301</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PRODUCTOS  DISPONIBLES PARA COMPRAR</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="MensajeMenu">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>800</y>
+          <width>331</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="regresarMain">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>800</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regresar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name01">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>40</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>70</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name02">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>40</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto2">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>70</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name03">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>40</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto3">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>80</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name04">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>40</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto4">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>70</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name05">
+        <property name="geometry">
+         <rect>
+          <x>1120</x>
+          <y>40</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto5">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>70</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto8">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>230</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto9">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>220</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto7">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>220</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>220</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto10">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>220</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name06">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>190</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name08">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>190</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name10">
+        <property name="geometry">
+         <rect>
+          <x>1140</x>
+          <y>190</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name09">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>190</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name07">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>190</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name15">
+        <property name="geometry">
+         <rect>
+          <x>1130</x>
+          <y>330</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto13">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>370</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name16">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>480</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name14">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>330</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name19">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>480</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name18">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>480</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto12">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>360</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name17">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>480</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto18">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>520</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name20">
+        <property name="geometry">
+         <rect>
+          <x>1150</x>
+          <y>480</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name12">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>330</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto17">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>510</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name11">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>330</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto16">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>510</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto15">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>360</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name13">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>330</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto11">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>360</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto19">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>510</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto20">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>510</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto14">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>360</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name21">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>650</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto23">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>710</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto24">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>700</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto22">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>700</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name23">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>650</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name25">
+        <property name="geometry">
+         <rect>
+          <x>1160</x>
+          <y>650</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name24">
+        <property name="geometry">
+         <rect>
+          <x>880</x>
+          <y>650</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name22">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>650</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto21">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>700</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="producto25">
+        <property name="geometry">
+         <rect>
+          <x>1120</x>
+          <y>700</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>190</y>
+          <width>201</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Opciones de Administrador</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Menu">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>300</y>
+          <width>181</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Seleccionar Producto</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Broker">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>410</y>
+          <width>171</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Subscription to Broker</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tempdisplay">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>490</y>
+          <width>151</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Consultar Temperatura</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <widget class="QLineEdit" name="topic">
+        <property name="geometry">
+         <rect>
+          <x>308</x>
+          <y>191</y>
+          <width>321</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mqtt_message">
+        <property name="geometry">
+         <rect>
+          <x>308</x>
+          <y>220</y>
+          <width>321</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>251</x>
+          <y>191</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Topic</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>251</x>
+          <y>220</y>
+          <width>50</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Message</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Subscribe">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>190</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Subscribe</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="publish">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>220</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Publish</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBoxPort">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>150</y>
+          <width>321</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>10000</number>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditHost">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>110</y>
+          <width>301</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>110</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Host</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>150</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Port</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Connect">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>110</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="regresarMenu">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>350</y>
+          <width>261</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regresar a Menu</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>330</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CompraFinal">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>490</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Comprar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Regresar">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>560</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regresar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="imagenBebida">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>50</y>
+          <width>311</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>260</y>
+          <width>281</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Seleccionar Cantidad de </string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="nombreBebida">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ReciboCompra">
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>160</y>
+          <width>379</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tu producto ha sido comprado con exito</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::MarkdownText</enum>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>330</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Menu</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="quantity">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>225</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>220</y>
+          <width>379</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Recibiras la siguiente cantidad:</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::MarkdownText</enum>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="AdminMenu">
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>160</y>
+          <width>307</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Menu de opciones de Administrador</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>250</y>
+          <width>131</width>
+          <height>72</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="1" column="0">
+          <widget class="QPushButton" name="RevisarInventario">
+           <property name="text">
+            <string>Revisar Inventario</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="text">
+            <string>Insertar Producto</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>400</y>
+          <width>181</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Resetear Inventario</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="AdminControl">
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>1020</x>
+          <y>630</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regresar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Pdis1">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>80</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Cantidad de productos disponibles: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Pdiscant1">
+        <property name="geometry">
+         <rect>
+          <x>1000</x>
+          <y>80</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="revisarDisponibles">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>40</y>
+          <width>241</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Revisar Productos Disponibles</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>501</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="A3_pos">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="A3_pos_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="A3_pos_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="A3_pos_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="A3_pos_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="A3_name">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="A3_name_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="A3_name_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="A3_name_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="A3_name_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="A3_count">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="A3_count_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="A3_count_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="A3_count_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="A3_count_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>501</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_15">
+         <item row="0" column="0">
+          <widget class="QLabel" name="A4_pos">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="A4_pos_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="A4_pos_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="A4_pos_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="A4_pos_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="A4_name">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="A4_name_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="A4_name_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="A4_name_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="A4_name_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="A4_count">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="A4_count_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="A4_count_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="A4_count_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="A4_count_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>400</y>
+          <width>501</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_16">
+         <item row="0" column="0">
+          <widget class="QLabel" name="A4_pos_6">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="A4_pos_7">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="A4_pos_8">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="A4_pos_9">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="A4_pos_10">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="A4_name_6">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="A4_name_7">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="A4_name_8">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="A4_name_9">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="A4_name_10">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="A4_count_6">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="A4_count_7">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="A4_count_8">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="A4_count_9">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="A4_count_10">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>21</x>
+          <y>10</y>
+          <width>511</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_17">
+         <item row="0" column="0">
+          <widget class="QLabel" name="A1_pos">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="A1_pos_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="A1_pos_3">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="A1_pos_4">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="A1_pos_5">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="A1_name">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="A1_name_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="A1_name_3">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="A1_name_4">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="A1_name_5">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="A1_count">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="A1_count_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="A1_count_3">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="A1_count_4">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="A1_count_5">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>124</y>
+          <width>501</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_18">
+         <item row="0" column="0">
+          <widget class="QLabel" name="A1_pos_6">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="A1_pos_7">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="A1_pos_8">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="A1_pos_9">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="A1_pos_28">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="A1_name_6">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="A1_name_7">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="A1_name_8">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="A1_name_9">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="A1_name_28">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="A1_count_6">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="A1_count_7">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="A1_count_8">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="A1_count_9">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="A1_count_28">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>130</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>150</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>170</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>190</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>210</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ProdductosMessage">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>100</y>
+          <width>181</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Lista de Productos Disponibles:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>230</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>250</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>270</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>290</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>310</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>330</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>350</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>370</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_227">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>390</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_228">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>410</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <widget class="QLabel" name="cantidadnodisponible">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>490</y>
+          <width>321</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Cantidad seleccionada no disponible</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="regresarAcantidad">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>660</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regresar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>130</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temperatura</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="tempValue">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>130</y>
+          <width>221</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="digitCount">
+         <number>7</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="regresarTemp">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>220</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regresar </string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1360</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMaquina_Dispenadora">
+    <property name="title">
+     <string>Maquina Dispenadora</string>
+    </property>
+   </widget>
+   <addaction name="menuMaquina_Dispenadora"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
